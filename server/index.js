@@ -9,6 +9,7 @@ const app = express();
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
 // database
 const CONNECTION_URL =
   "mongodb+srv://mondo:mondo123@cluster0.hhwq2.mongodb.net/mondo-db?retryWrites=true&w=majority";
@@ -22,3 +23,14 @@ mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: tru
     .catch((error)=> console.log(error.message));
 
 mongoose.set("useFindAndModify", false);
+
+// Importing Routes
+const adminRoutes = require('./routes/admin');
+app.use('/admin', adminRoutes);
+
+const learnerRoutes = require('./routes/learner');
+app.use('/learner', learnerRoutes);
+
+const teacherRoutes = require('./routes/teacher');
+app.use('/teacher', teacherRoutes);
+
