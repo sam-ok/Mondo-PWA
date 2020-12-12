@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test - Page</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/test.css" />
+</head>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="../images/mondo_logo-removebg-preview.png" alt="Mondo logo">
+                <strong>Mondo</strong>
+            </a>
+            <div class="collapse navbar-collapse col-4" id="navbarCollapse">
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="bg-light p-5 rounded">
+            <h1 style="text-align:center;">Test Question</h1>
+            <br>
+            <h6>Listen in to the Question Below</h6>
+            <audio controls>
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="row">
+                <div class="col-2">
+                    <form class="d-flex">
+                        <button class="btn btn-outline-primary" type="submit">Sites &raquo;</button>
+                    </form> 
+                    </div>
+                    <div class="col-2">
+                        <form class="d-flex" action="/test">
+                            <button class="btn btn-outline-primary" type="submit">Pictures &raquo;</button>
+                        </form>        
+                        </div>       
+                </div>
+            </div>
+            <div class="container">
+                <h4>Question 1:</h4>
+                <h6>Please select one response by clicking on the circle next to your chosen answer</h6>
+                <div class="row row-space" style="padding-bottom: 100pt;">
+                    <ol type="a">
+                        <li><input type="radio" value="My favourite Matooke" name="answer"> My favourite Matooke</li>
+                        <li><input type="radio" value="Why is Matooke good food" name="answer"> Why is Matooke good food</li>
+                        <li><input type="radio" value="The best recipes of" name="answer"> The best recipes of</li>
+                        <li><input type="radio" value="Buy best fresh Matooke" name="answer"> Buy best fresh Matooke</li>
+                    </ol>
+                </div>
+    
+            </div>
+    </main>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
