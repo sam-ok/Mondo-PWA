@@ -4,21 +4,19 @@ html {
   margin: 0;
 }
 
-.p{
+.p {
   color: #c00000;
   font-weight: bold;
-  
 }
 
-sup{
-    color: #c00000;
-    font-weight: bolder;
-    font-size: 15px;
+sup {
+  color: #c00000;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 .select {
   width: 115%;
-  
 }
 
 .div {
@@ -75,7 +73,7 @@ sup{
 
 .bg {
   /* The image used */
-  background-image: url("../images/girl-s-white-and-blue-dress-755043.jpg");
+  background-image: url("../images/pexels-rfstudio-3059745.jpg");
 
   /* Full height */
   height: 100%;
@@ -86,27 +84,13 @@ sup{
   background-size: cover;
 }
 
-.bg2 {
-  /* The image used */
-  background-image: url("../images/close-up-of-wooden-plank-326311.jpg");
-
-  /* Full height */
-  height: auto;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-}
-
 header {
   height: 72px;
   color: #ffffff;
   font-size: 40px;
   font-weight: bolder;
-  opacity: 1; 
-  background-color: rgba(0,0,0,0.6);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .log {
@@ -118,23 +102,23 @@ header {
   font-weight: bold;
 }
 
-.log :a{
-  color: #0078d4; 
+.log :a {
+  color: #0078d4;
   text-decoration: none;
 }
 
-.log :hover,a{
-  color: white; 
+.log :hover,
+a {
+  color: white;
   text-decoration: none;
 }
-
 
 .float-btn-right {
   float: right;
 }
 
 .logo-header {
-  padding-top: 8px;
+  padding-top: 6px,0;
 }
 
 .big-text {
@@ -171,27 +155,23 @@ hr {
   border-radius: 30px;
 }
 
-label{
+label {
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-footer{
-  display: block;
-  height: 55px;
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   color: white;
   text-align: center;
-  opacity: 1; 
-  background-color: rgba(0,0,0,0.6);
-
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-#footer{
+#footer {
   padding-top: 12px;
-  color:#fff;
-  text-align: center; 
+  color: #fff;
+  text-align: center;
 }

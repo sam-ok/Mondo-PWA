@@ -19,6 +19,9 @@ app.set("view engine", "pug");
 let joinedPath = path.join(__dirname, "views");
 app.set('views', joinedPath);
 
+// Serve Static Files
+app.use(express.static(path.join(__dirname, 'public')))
+
 
 // database
 const CONNECTION_URL =
