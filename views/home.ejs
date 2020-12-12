@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home - Page</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
-  </head>
 
-  <body>
-    <div class="bg">
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="logo-header"><img src="/images/output-onlinepngtools.png" alt=""></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home - Page</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/custom.css" />
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="bg">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="logo-header">
+              <img src="/images/output-onlinepngtools.png" alt="" />
             </div>
-            <div class="col-md-4">
-              <div class="float-btn-right">
-                <button type="button" class="btn btn-primary log">
-                  <a href="">Sign In</a>
+          </div>
+          <div class="col-md-4">
+            <div class="float-btn-right">
+              <a href="/auth/login">
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary log dropdown-toggle" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sign In As
                 </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="">Admin</a>
+                  <a class="dropdown-item" href="">Teacher</a>
+                  <a class="dropdown-item" href="">Learner</a>
+                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <div class="app-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="big-text">
-                <h1 class="big-text">
-                  Mondo's <font color="#0078d4"> Digital</font> Competencies<br />
-                  Program!
-                </h1>
-                <hr />
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-7">
-                      <h5 id="p">Register your team to start learning</h5>
-                    </div>
-                    <div class="col-md-5">
+    <div class="app-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="big-text">
+              <h1 class="big-text">
+                Mondo's
+                <font color="#0078d4"> Digital</font> Competencies<br />
+                Program!
+              </h1>
+              <hr />
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h5 id="p">Register your team to start learning</h5>
+                  </div>
+                  <div class="col-md-5">
+                    <a href="/auth/register">
                       <button class="btn btn-primary btn-contact">
                         Sign up
                       </button>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -55,9 +72,11 @@
           </div>
         </div>
       </div>
-      <footer>
-        <p id="footer">&copy; Copyright 2020 Mondo</p>
-      </footer>
     </div>
-  </body>
+    <!-- <footer>
+        <p id="footer">&copy; Copyright 2020 Mondo</p>
+      </footer> -->
+  </div>
+</body>
+
 </html>

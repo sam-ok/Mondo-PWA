@@ -84,6 +84,22 @@ sup {
   background-size: cover;
 }
 
+.bg2 {
+  /* The image used */
+  background-image: url("../images/pexels-vojtech-okenka-392018.jpg");
+
+  /* Full height */
+  height: auto;
+
+  width: auto;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: #fff; */
+}
+
 header {
   height: 72px;
   color: #ffffff;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login - Page</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="bg2" onload="document.getElementById('txt-username').focus();">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="logo-header">
+                        <img src="/images/output-onlinepngtools.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-body">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card-body">
+                    <header class="card-header">
+                        <h1 class="card-title" style="margin-left: 50px">Register</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <br />
+            <form id="form" method="POST" >
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" class="form-control" id="txt-username" name="username"
+                        placeholder="Enter Username" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="txt-password" name="password"
+                        placeholder="Enter Password" />
+                </div>
+                <div class="form-group">
+                    <label>Access Level</label>
+                    <select id="inputLevel" class="form-control select" name="accessLevel" style="width: 100%">
+                        <option selected disabled>Choose Access Level ...</option>
+                        <option>Admin</option>
+                        <option>Teacher</option>
+                        <option>Learner</option>
+                    </select>
+                </div>
+                <br />
+                <div class="row">
+                    <button class="btn btn-primary btn-block">Register</button>
+                </div>
+                <!-- <button type="submit" class="button-login" onclick="check_usernameAndpassword()"
+                    style="margin-left: 0px;">Log In</button>
+                <button type="reset" class="button-cancel" style="margin-left: 80px;">Cancel</button> -->
+            </form>
+            <p id="display" class="p"></p>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <p id="footer">&copy; Copyright 2020 Mondo</p>
+    </footer> -->
+
+    <!-- <script src="/js/loginValidation.js"></script> -->
+</body>
+
+</html>
