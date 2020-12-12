@@ -1,0 +1,98 @@
+.button-login {
+  /* width: 40%; */
+  color: white;
+  /* padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; */
+  /* font-size: 15px;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: none; */
+  border-color: #0067b8;
+  background-color: #0067b8;
+}
+
+.button-cancel {
+  width: 40%;
+  background-color: transparent;
+  color: #0067b8;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #0067b8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button-login a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-cancel:hover {
+  background-color: #c8e1f5;
+  color: #333;
+}
+
+.button-login:hover{
+  background-color: #044a80;
+  
+}
+
+.sidenav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color:  none;
+  font-size: 20px; 
+}
+
+.sidenav li {
+  margin-bottom: 5px;
+  background-color: #008fb3;
+}
+
+.sidenav a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  
+}
+
+.sidenav a:hover {
+  background-color: #333;
+}
+
+/* style the navbar */
+.topnav{
+  overflow: auto;
+  display: block;
+	/* background-color: #333; */
+}
+
+/* Navbar links */
+.topnav a {
+	float: left;
+	display: block;
+	color:white;
+	text-align: center;
+	padding: 7px 14px;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+	background-color: #008fb3;
+	color: white;
+}
+
+

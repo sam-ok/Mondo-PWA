@@ -2,11 +2,6 @@ const mongoose = require("mongoose");
 const bcryptjs = require("bcryptjs");
 
 const userSchema = mongoose.Schema({
-  userId: {
-    type: String,
-    unique: true,
-    required: "Please Enter EmployeeID",
-  },
   username: {
     type: String,
     unique: true,
@@ -24,14 +19,22 @@ const userSchema = mongoose.Schema({
 });
 
 // hashing a paswword before saving it to the database pre-save hook
-employeeSchema.pre("save", function(next) {
+userSchema.pre("save", function (next) {
   this.password = bcryptjs.hashSync(this.password, 10);
   next();
 });
 
-
-//TODO : authenticate input against database
-
+//authenticate input against database
+userSchema.statics.authenticate = async function (username, password) {
+  const user = await this.findOne({ username: username });
+  if (!user) {
+    throw new Error("User not found.");
+  }
+  const match = await bcryptjs.compare(password, user.password);
+  if (match) {
+    return user;
+  }
+};
 
 // Creating an instance of the model
-module.exports = mongoose.model("Employee", employeeSchema);
+module.exports = mongoose.model("User", userSchema);
