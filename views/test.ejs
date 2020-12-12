@@ -16,12 +16,10 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <img src="../images/mondo_logo-removebg-preview.png" alt="Mondo logo">
-                <strong>Mondo</strong>
-            </a>
-            <div class="collapse navbar-collapse col-4" id="navbarCollapse">
-            </div>
+            <form class="navbar-brand d-flex align-items-center" action="/">
+                <button class="btn btn-outline" type="submit"><img src="../images/output-onlinepngtools.png" alt="Mondo logo">
+                </button>
+            </form> 
         </div>
     </nav>
 
@@ -51,12 +49,15 @@
                 <h4>Question 1:</h4>
                 <h6>Please select one response by clicking on the circle next to your chosen answer</h6>
                 <div class="row row-space" style="padding-bottom: 100pt;">
-                    <ol type="a">
-                        <li><input type="radio" value="My favourite Matooke" name="answer"> My favourite Matooke</li>
-                        <li><input type="radio" value="Why is Matooke good food" name="answer"> Why is Matooke good food</li>
-                        <li><input type="radio" value="The best recipes of" name="answer"> The best recipes of</li>
-                        <li><input type="radio" value="Buy best fresh Matooke" name="answer"> Buy best fresh Matooke</li>
-                    </ol>
+                    <form action="/test">
+                        <ol type="a">
+                            <li><input type="radio" value="My favourite Matooke" name="answer"> My favourite Matooke</li>
+                            <li><input type="radio" value="Why is Matooke good food" name="answer"> Why is Matooke good food</li>
+                            <li><input type="radio" value="The best recipes of" name="answer"> The best recipes of</li>
+                            <li><input type="radio" value="Buy best fresh Matooke" name="answer"> Buy best fresh Matooke</li>
+                        </ol>
+                        <button class="btn btn-outline-primary" type="submit">Submit</button>
+                    </form>        
                 </div>
     
             </div>

@@ -7,4 +7,9 @@ router.get("/", (req, res) => {
   res.send("Welcome to Teacher Routes");
 });
 
+//Test results routes.
+router.get('/testResults', (req, res) => {
+  res.render('testResults.ejs')
+});
+
 module.exports = router;

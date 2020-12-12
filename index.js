@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Set view Engines
 app.set("view engine", "ejs");
-app.set("view engine", "pug");
+// app.set("view engine", "pug");
 
 
 // Specify where the engine is to pick views 
