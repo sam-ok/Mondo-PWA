@@ -1,9 +1,8 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mondo App",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -11,9 +10,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.7",
-    "nodemon": "^2.0.6"
-  }
+    "node": "^15.3.0",
+    "nodemon": "^2.0.6",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-ok/Mondo-PWA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sam-ok/Mondo-PWA/issues"
+  },
+  "homepage": "https://github.com/sam-ok/Mondo-PWA#readme"
 }

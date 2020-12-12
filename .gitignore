@@ -1,5 +1,5 @@
 # npm folders
-node_modules
+node_modules/
 
 # environment files
 .env
