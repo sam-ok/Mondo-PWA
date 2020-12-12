@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const path = require("path");
 const bodyParser = require("body-parser");
 
 // create express app
@@ -8,6 +9,15 @@ const app = express();
 // middleware
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Set view Engines
+app.set("view engine", "ejs");
+app.set("view engine", "pug");
+
+
+// Specify where the engine is to pick views 
+let joinedPath = path.join(__dirname, "views");
+app.set('views', joinedPath);
 
 
 // database
@@ -23,6 +33,11 @@ mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: tru
     .catch((error)=> console.log(error.message));
 
 mongoose.set("useFindAndModify", false);
+
+// Creating the Home Route
+app.get("/", (req, res) => {
+  res.render("home.ejs");
+});
 
 // Importing Routes
 const adminRoutes = require('./routes/admin');
