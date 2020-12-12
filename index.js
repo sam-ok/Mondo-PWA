@@ -24,8 +24,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 // database
-const CONNECTION_URL =
-  "mongodb+srv://mondo:mondo123@cluster0.hhwq2.mongodb.net/mondo-db?retryWrites=true&w=majority";
+// const CONNECTION_URL =
+//   "mongodb+srv://mondo:mondo123@cluster0.hhwq2.mongodb.net/mondo-db?retryWrites=true&w=majority";
+
+// mongoose local database connection
+const CONNECTION_URL = "mongodb://localhost:27017/mondo-testdb";
 
 // port 
 const PORT = process.env.PORT || 5000;
@@ -43,6 +46,9 @@ app.get("/", (req, res) => {
 });
 
 // Importing Routes
+const auth_Routes = require("./routes/authRoutes");
+app.use('/auth', auth_Routes);
+
 const adminRoutes = require('./routes/admin');
 app.use('/admin', adminRoutes);
 
