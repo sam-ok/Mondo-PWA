@@ -78,23 +78,25 @@ sup {
   /* Full height */
   height: 100%;
 
+  width: 100%;
+
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg2 {
   /* The image used */
-  background-image: url("../images/pexels-vojtech-okenka-392018.jpg");
+  background-image: url("../images/pexels-kenex-media-sa-3207532.jpg");
 
   /* Full height */
-  height: auto;
+  height: 100%;
 
-  width: auto;
+  width: 100%;
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
   /* color: #fff; */
@@ -134,7 +136,7 @@ a {
 }
 
 .logo-header {
-  padding-top: 6px,0;
+  padding-top: 6px, 0;
 }
 
 .big-text {
@@ -190,4 +192,64 @@ footer {
   padding-top: 12px;
   color: #fff;
   text-align: center;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .big-text {
+    font-size: 42px;
+  }
+
+  #big-text {
+    margin-top: 250px;
+  }
+  #p {
+    font-weight: bolder;
+    color: white;
+    font-size: 13px;
+  }
+
+  .btn-contact {
+    width: 270px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .btn-block {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .log {
+    width: 270px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .log :a {
+    color: #0078d4;
+    text-decoration: none;
+  }
+
+  .log :hover,
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .div {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  /* .div2 {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  } */
 }
