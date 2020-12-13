@@ -19,7 +19,7 @@ router.get("/register", (req, res) => {
 router.post("/login", async (req, res) => {
   console.log("Form submitted Successfully");
   console.log(req.body)
-   res.redirect("/learner");
+   res.render("welcome.ejs");
    try {
      const user = await User.authenticate(
        req.body.username,
